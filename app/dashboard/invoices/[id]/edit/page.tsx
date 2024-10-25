@@ -4,11 +4,14 @@ import { fetchInvoiceById, fetchCustomers } from '@/app/lib/data';
  
 export default async function Page(props: { params: Promise<{ id: string }> }) {
   const params = await props.params;
-  const id = params.id;
+  const { id } = params;
   const [invoice, customers] = await Promise.all([
     fetchInvoiceById(id),
     fetchCustomers(),
   ]);
+
+  console.table(invoice);
+  console.table(customers);
 
   return (
     <main>
