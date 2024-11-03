@@ -10,9 +10,6 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
     fetchCustomers(),
   ]);
 
-  console.table(invoice);
-  console.table(customers);
-
   return (
     <main>
       <Breadcrumbs
