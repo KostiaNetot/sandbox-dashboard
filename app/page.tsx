@@ -27,7 +27,7 @@ export default function Page() {
               lusitana.className
             )}`}
           >
-            Hello Katherin! How's Egypt?
+            Hello Katherin! How&apos;s Egypt?
           </div>
 
           <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
